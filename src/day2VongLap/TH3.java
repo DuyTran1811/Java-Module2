@@ -19,7 +19,7 @@ public class TH3 {
                 else
                     b = b - a;
             }
-            System.out.println("Greatest common factor:" + a);
         }
+            System.out.println("Greatest common factor: " + a);
     }
 }

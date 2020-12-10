@@ -16,24 +16,26 @@ public class TH4 {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Draw the triangle");
-                    System.out.println("******");
-                    System.out.println("*****");
-                    System.out.println("****");
-                    System.out.println("***");
-                    System.out.println("**");
-                    System.out.println("*");
+                    for (int i = 1; i < 5; i++) {
+                        for (int j = 1; j < 5 - i + 1; j++) {
+                            System.out.print(" * ");
+                        }
+                        System.out.println();
+                    }
                     break;
                 case 2:
-                    System.out.println("Draw the square");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-                    System.out.println("* * * * * *");
-
-                    break;
+                    for (int i = 1; i <= 6; i++) {
+                        for (int j = 1; j <= 6; j++) {
+                            if (i == 1 || i == 6 || j == 1 || j == 6 ||
+                                    i == j || (i + j) == (6 + 1)) {
+                                System.out.print(" * ");
+                            } else {
+                                System.out.print("   ");
+                            }
+                        }
+                        System.out.println();
+                    }
+            break;
                 case 3:
                     System.out.println("Draw the rectangle");
                     System.out.println("* * * * * *");
