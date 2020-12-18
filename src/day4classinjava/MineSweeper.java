@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MineSweeper {
     public static void main(String[] args) {
+        Fan []fan = new Fan[5];
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the width: ");
         double width = scanner.nextDouble();
